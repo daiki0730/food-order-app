@@ -1,5 +1,5 @@
 <?php
-require_once('menu.php');
+require_once('data.php');
 ?>
 
 <!DOCTYPE html>
@@ -14,10 +14,15 @@ require_once('menu.php');
   <div class="menu-wrapper container">
     <h1 class="logo">Café Nishida Daiki</h1>
     <div class="menu-items">
-      <?php foreach ($menues as $menu): ?>
-        <h3><?php echo $menu->name ?></h3>
+      <?php foreach ($menus as $menu): ?>
+        <div class="menu-item">
+          <img src="<?php echo $menu->image ?>">
+          <h3 class="menu-item-name"><?php echo $menu->name ?></h3>
+          <p class="price">¥<?php echo $menu->price ?></p>
+        </div>
       <?php endforeach ?>
     </div>
   </div>
 </body>
 </html>
+
