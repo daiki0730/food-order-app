@@ -2,16 +2,18 @@
 
 class Menu {
   public $name;
+  public function hello(){
+    echo 'hello';
+  }
 }
 
 $curry = new Menu();
-$curry->name = 'CURRY';
-
 $pasta = new Menu();
+$curry->name = 'CURRY';
 $pasta->name = 'PASTA';
 
-echo $curry->name;
+echo $curry->hello();
 echo '<br>';
-echo $pasta->name;
+echo $pasta->hello();
 
 ?>
