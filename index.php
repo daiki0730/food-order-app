@@ -19,6 +19,7 @@ require_once('data.php');
           <img src="<?php echo $menu->getImage() ?>">
           <h3 class="menu-item-name"><?php echo $menu->getName() ?></h3>
           <p class="price">¥<?php echo $menu->getTaxIncludedPrice() ?>  (tax-in)</p>
+          <p>注文数: <?php echo $menu->getOrderCount() ?></p>
         </div>
       <?php endforeach ?>
     </div>
