@@ -1,23 +1,5 @@
 <?php
-class Menu {
-  public $name;
-  
-  public function __construct($name) {
-    $this->name = $name;
-  }
-  
-  public function hello() {
-    echo '私は'.$this->name.'です';
-  }
-}
-
-$juice = new Menu('JUICE');
-$coffee = new Menu('COFFEE');
-$curry = new Menu('CURRY');
-$pasta = new Menu('PASTA');
-
-$menues = array($juice, $coffee, $curry, $pasta);
-
+require_once('menu.php');
 ?>
 
 <!DOCTYPE html>
