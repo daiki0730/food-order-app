@@ -3,7 +3,7 @@
 class Menu {
   public $name;
   public function hello(){
-    echo 'hello';
+    echo '注文は'.$this->name.'です';
   }
 }
 
