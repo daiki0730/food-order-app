@@ -17,8 +17,7 @@ echo '<br>';
 $pasta = new Menu('PASTA');
 echo '<br>';
 
-echo $curry->hello();
-echo '<br>';
-echo $pasta->hello();
-
 ?>
+
+<p><?php echo $curry->name; ?></p>
+<p><?php echo $pasta->name; ?></p>
