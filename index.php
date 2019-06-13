@@ -16,6 +16,7 @@ $coffee = new Menu('COFFEE');
 $curry = new Menu('CURRY');
 $pasta = new Menu('PASTA');
 
+$menues = array($juice, $coffee, $curry, $pasta);
 
 ?>
 
@@ -31,9 +32,9 @@ $pasta = new Menu('PASTA');
   <div class="menu-wrapper container">
     <h1 class="logo">Café Nishida Daiki</h1>
     <div class="menu-items">
-
-      
-      
+      <?php foreach ($menues as $menu): ?>
+        <h3><?php echo $menu->name ?></h3>
+      <?php endforeach ?>
     </div>
   </div>
 </body>
