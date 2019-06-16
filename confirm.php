@@ -14,7 +14,7 @@
     <?php foreach ($menus as $menu): ?>
       <?php ?>
       <p class="order-amount">
-
+        <?php echo $menu->getName() ?>
         
         個
       </p>
