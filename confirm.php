@@ -1,4 +1,5 @@
-<?php require_once('data.php')?>
+
+<?php require_once('data.php') ?>
 
 <!DOCTYPE html>
 <html>
@@ -12,10 +13,11 @@
   <div class="order-wrapper">
     <h2>注文内容確認</h2>
     <?php foreach ($menus as $menu): ?>
-      <?php ?>
+      <?php $orderCount = $_POST[$menu->getName()] ?>
       <p class="order-amount">
         <?php echo $menu->getName() ?>
-        
+        x
+        <?php echo $orderCount ?>
         個
       </p>
     <?php endforeach ?>
