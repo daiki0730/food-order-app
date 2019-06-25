@@ -2,7 +2,6 @@
 require_once('data.php');
 require_once('menu.php');
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,7 +10,6 @@ require_once('menu.php');
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link href='https://fonts.googleapis.com/css?family=Pacifico|Lato' rel='stylesheet' type='text/css'>
 </head>
- 
 <body>
   <div class="menu-wrapper container">
     <h1 class="logo">Café Nishida Daiki</h1>
