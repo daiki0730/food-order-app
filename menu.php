@@ -4,12 +4,16 @@ class Menu {
   private $price;
   private $image;
   private $orderCount = 0;
-  public static $count = 4;
-
+  // クラスプロパティ$countのアクセス権をprivateに、初期値を数値の0にしてください
+  private static $count = 0;
+  
   public function __construct($name, $price, $image) {
     $this->name = $name;
     $this->price = $price;
     $this->image = $image;
+    // クラスプロパティ$countの値に1を足してください
+    self :: $count++;
+    
   }
   
   public function hello() {
@@ -38,6 +42,11 @@ class Menu {
   
   public function getTotalPrice() {
     return $this->getTaxIncludedPrice() * $this->orderCount;
+  }
+  
+  // getCountというクラスメソッドを追加してください
+  public static function getCount() {
+    return self :: $count;
   }
   
 }
