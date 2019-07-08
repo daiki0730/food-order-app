@@ -4,17 +4,13 @@ require_once('menu.php');
 class Drink extends Menu {
   private $type;
   
-  // Menuクラスの__constructをコピーしてください
-  // 引数に$typeを追加してください
   public function __construct($name, $price, $image, $type) {
-    $this->name = $name;
-    $this->price = $price;
-    $this->image = $image;
-    self::$count++;
+    // 以下の4行を削除してください
     
-    // typeプロパティに$typeを代入してください
+    // 親クラスのコンストラクタを呼び出してください
+    parent::__construct($name, $price, $image);
+    
     $this->type = $type;
-    
   }
   
   public function getType() {
